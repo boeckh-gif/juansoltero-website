@@ -156,6 +156,11 @@
     .roots-aside { background: var(--white); border: 1px solid var(--border); border-left: 3px solid var(--gold); padding: 1.75rem; }
     .roots-aside-title { font-family: -apple-system, sans-serif; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
     .roots-aside-body { font-size: 1rem; color: var(--text-mid); line-height: 1.7; font-style: italic; }
+    .roots-gallery { margin-top: 3.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+    .roots-gallery-item img { width: 100%; height: auto; border-radius: var(--radius); display: block; margin-bottom: 0.9rem; }
+    .roots-gallery-caption { font-family: -apple-system, sans-serif; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.4rem; }
+    .roots-gallery-text { font-size: 0.9375rem; color: var(--text-mid); line-height: 1.65; }
+    @media (max-width: 720px) { .roots-gallery { grid-template-columns: 1fr; } }
 
     /* Contact (simplified — no form, just a bridge to Solara) */
     .contact { background: var(--white); text-align: center; }
@@ -356,6 +361,23 @@
           <p class="roots-aside-body" data-lang="en">A future project rooted in the same soil: <em>Arriero de Quila</em>, a small-batch Raicilla produced on the family ranch. Raicilla is an ancestral spirit from Jalisco — older than tequila, rarely exported, and recently granted its own denomination of origin. If tequila and mezcal had a child in the Sierras of Jalisco, it would be Raicilla.</p>
           <p class="roots-aside-body" data-lang="es">Un proyecto futuro arraigado en la misma tierra: <em>Arriero de Quila</em>, una Raicilla artesanal producida en el rancho familiar. La Raicilla es un destilado ancestral de Jalisco — más antiguo que el tequila, rara vez exportado y recientemente reconocido con su propia denominación de origen. Si el tequila y el mezcal tuvieran un hijo en las Sierras de Jalisco, sería la Raicilla.</p>
         </div>
+      </div>
+    </div>
+
+    <div class="roots-gallery">
+      <div class="roots-gallery-item">
+        <img src="/images/el-picacho.png" alt="El Picacho — hand-drawn illustration of a rocky landmark rising from the Sierra de Quila mountain ridge">
+        <div class="roots-gallery-caption" data-lang="en">El Picacho</div>
+        <div class="roots-gallery-caption" data-lang="es">El Picacho</div>
+        <p class="roots-gallery-text" data-lang="en">A rock landmark that juts out from the mountainside above the ranch — for generations, travelers used it to find their way.</p>
+        <p class="roots-gallery-text" data-lang="es">Una formación rocosa que sobresale de la ladera sobre el rancho — por generaciones, los viajeros la usaron para orientarse.</p>
+      </div>
+      <div class="roots-gallery-item">
+        <img src="/images/petroglyphs.png" alt="Hand-drawn illustration of ancient petroglyph-carved stones on the Loma, near the family ranch">
+        <div class="roots-gallery-caption" data-lang="en">The Loma</div>
+        <div class="roots-gallery-caption" data-lang="es">La Loma</div>
+        <p class="roots-gallery-text" data-lang="en">Carved stones sit on the hilltop between two crosses — marks left by hands nobody can name now, on the same ground the family stewards today.</p>
+        <p class="roots-gallery-text" data-lang="es">Piedras talladas descansan en la loma entre dos cruces — marcas dejadas por manos que ya nadie puede nombrar, en la misma tierra que la familia cuida hoy.</p>
       </div>
     </div>
   </div>
