@@ -181,6 +181,8 @@
     .ai-link { font-family: -apple-system, sans-serif; font-size: 11px; padding: 6px 12px; border: 1px solid rgba(255,255,255,0.15); color: rgba(255,255,255,0.55); text-decoration: none; border-radius: 20px; transition: all 0.2s; white-space: nowrap; cursor: pointer; background: transparent; }
     .ai-link:hover { border-color: var(--terra-light); color: var(--terra-light); background: rgba(194,113,79,0.1); }
     .footer-copy { font-family: -apple-system, sans-serif; font-size: 11px; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.08); text-align: center; grid-column: span 2; }
+    .footer-identity { display: flex; align-items: center; gap: 12px; }
+    .footer-mark { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; flex-shrink: 0; opacity: 0.9; border: 1px solid rgba(255,255,255,0.15); }
 
     /* Language hidden */
     [data-lang="es"] { display: none; }
@@ -405,11 +407,14 @@
 <!-- Footer with AI SEO block -->
 <footer>
   <div class="footer-inner">
-    <div>
-      <div class="footer-name">Juan Soltero Boeckh</div>
-      <div class="footer-sub sans">
-        Consultant · Builder · Veteran · Las Vegas, NV<br>
-        juan@solarassoc.com · <a href="https://www.linkedin.com/in/juan-boeckh" target="_blank" rel="noopener noreferrer" style="color:inherit; opacity:0.7;">LinkedIn</a>
+    <div class="footer-identity">
+      <img src="/images/owl-mark.png" alt="" aria-hidden="true" class="footer-mark">
+      <div>
+        <div class="footer-name">Juan Soltero Boeckh</div>
+        <div class="footer-sub sans">
+          Consultant · Builder · Veteran · Las Vegas, NV<br>
+          juan@solarassoc.com · <a href="https://www.linkedin.com/in/juan-boeckh" target="_blank" rel="noopener noreferrer" style="color:inherit; opacity:0.7;">LinkedIn</a>
+        </div>
       </div>
     </div>
     <div class="footer-ai">
