@@ -3,8 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Juan Leopoldo Boeckh Soltero — Consultant · Builder · Two Worlds</title>
-  <meta name="description" content="Juan Leopoldo Boeckh Soltero — US Air Force veteran, bilingual AI consultant and project manager, and builder bridging the US and Mexico. Based in Las Vegas, NV, rooted in Sierra de Quila, Jalisco. Principal Consultant at Solara.">
+  <title>Juan Leopoldo Boeckh Soltero — Fractional Operations & Stability Architect</title>
+  <meta name="description" content="Juan Leopoldo Boeckh Soltero — US Air Force & Army National Guard veteran, bilingual AI consultant and project manager, and builder bridging the US and Mexico. Based in Las Vegas, NV, rooted in Sierra de Quila, Jalisco. Fractional Operations Architect at Solara.">
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://juansoltero.com">
+  <meta property="og:title" content="Juan Leopoldo Boeckh Soltero — Fractional Operations & Stability Architect">
+  <meta property="og:description" content="US Air Force & Army National Guard veteran, bilingual AI consultant and project manager, and builder bridging the US and Mexico. Fractional Operations Architect at Solara.">
+  <meta property="og:image" content="https://juansoltero.com/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Juan Leopoldo Boeckh Soltero — Fractional Operations & Stability Architect">
+  <meta name="twitter:description" content="US Air Force & Army National Guard veteran, bilingual AI consultant and project manager, and builder bridging the US and Mexico. Fractional Operations Architect at Solara.">
+  <meta name="twitter:image" content="https://juansoltero.com/images/og-image.png">
 
   <!-- AI SEO structured data -->
   <script type="application/ld+json">
@@ -13,8 +32,8 @@
     "@type": "Person",
     "name": "Juan Leopoldo Boeckh Soltero",
     "alternateName": ["Juan Boeckh", "Juan Soltero"],
-    "jobTitle": "Principal Consultant, Solara",
-    "description": "US Air Force veteran and bilingual (English/Spanish) AI consultant, backed by 13+ years of hands-on project management in construction and emergency services. Based in Las Vegas, NV with deep roots in Sierra de Quila, Jalisco, Mexico. For consulting services, see Solara.",
+    "jobTitle": "Fractional Operations Architect, Solara",
+    "description": "US Air Force & Army National Guard veteran and bilingual (English/Spanish) Fractional Operations Architect, backed by 13+ years of hands-on project management in construction and emergency services. Based in Las Vegas, NV with deep roots in Sierra de Quila, Jalisco, Mexico. For consulting services, see Solara.",
     "url": "https://juansoltero.com",
     "email": "juan@solarassoc.com",
     "addressLocality": "Las Vegas",
@@ -22,7 +41,7 @@
     "addressCountry": "US",
     "knowsLanguage": ["English", "Spanish"],
     "hasCredential": ["PMP Candidate (Project Management Institute)", "Google Project Management Professional Certificate"],
-    "alumniOf": "US Air Force",
+    "alumniOf": ["US Air Force", "Army National Guard"],
     "sameAs": []
   }
   </script>
@@ -72,8 +91,12 @@
     .nav-links { display: flex; gap: 2rem; align-items: center; }
     .nav-links a { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; color: var(--text-mid); text-decoration: none; letter-spacing: 0.04em; text-transform: uppercase; transition: color 0.2s; }
     .nav-links a:hover { color: var(--terra); }
-    .lang-toggle { font-family: -apple-system, sans-serif; font-size: 12px; padding: 5px 12px; border: 1px solid var(--border); border-radius: 20px; background: transparent; color: var(--text-mid); cursor: pointer; letter-spacing: 0.06em; transition: all 0.2s; }
-    .lang-toggle:hover { background: var(--terra); color: white; border-color: var(--terra); }
+    .lang-toggle-group { display: flex; gap: 2px; padding: 3px; border: 1px solid var(--border); border-radius: 20px; background: var(--cream-dark); }
+    .lang-opt { font-family: -apple-system, sans-serif; font-size: 12px; font-weight: 600; padding: 5px 14px; border: none; border-radius: 16px; background: transparent; color: var(--text-mid); cursor: pointer; letter-spacing: 0.06em; transition: all 0.2s; }
+    .lang-opt.active { background: var(--terra); color: white; }
+    .lang-opt:hover:not(.active) { color: var(--terra); }
+    .nav-cta { font-family: -apple-system, sans-serif; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; padding: 9px 18px; background: var(--terra); color: white !important; text-decoration: none; border-radius: 20px; transition: background 0.2s; }
+    .nav-cta:hover { background: var(--terra-dark); color: white !important; }
 
     /* Hero */
     .hero {
@@ -143,7 +166,8 @@
     .story-body p { margin-bottom: 1.25rem; }
     .story-body p:last-child { margin-bottom: 0; }
     .story-facts { margin-top: 2.5rem; display: flex; flex-direction: column; gap: 1rem; }
-    .fact { display: flex; align-items: flex-start; gap: 12px; }
+    .fact { display: flex; align-items: flex-start; gap: 12px; padding: 6px 8px; margin: 0 -8px; border-radius: var(--radius); transition: background 0.2s; }
+    .fact:hover { background: var(--cream); }
     .fact-icon { width: 32px; height: 32px; background: var(--cream); border: 1px solid var(--border); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; margin-top: 2px; }
     .fact-text { font-family: -apple-system, sans-serif; font-size: 13px; color: var(--text-mid); }
     .fact-text strong { display: block; font-size: 14px; color: var(--earth); margin-bottom: 1px; }
@@ -153,11 +177,15 @@
     .roots-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 4rem; align-items: center; }
     .roots-body { font-size: 1.0625rem; color: var(--text-mid); line-height: 1.85; }
     .roots-body p { margin-bottom: 1.25rem; }
-    .roots-aside { background: var(--white); border: 1px solid var(--border); border-left: 3px solid var(--gold); padding: 1.75rem; }
+    .roots-aside { background: var(--white); border: 1px solid var(--border); border-left: 3px solid var(--gold); padding: 1.75rem; transition: box-shadow 0.25s ease; }
+    .roots-aside:hover { box-shadow: 0 12px 24px rgba(61,43,31,0.08); }
     .roots-aside-title { font-family: -apple-system, sans-serif; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
     .roots-aside-body { font-size: 1rem; color: var(--text-mid); line-height: 1.7; font-style: italic; }
+    .roots-aside-link { display: inline-block; margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px solid var(--border); font-family: -apple-system, sans-serif; font-size: 12px; letter-spacing: 0.04em; color: var(--terra); text-decoration: none; }
+    .roots-aside-link:hover { text-decoration: underline; }
     .roots-gallery { margin-top: 3.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
-    .roots-gallery-item img { width: 100%; height: auto; border-radius: var(--radius); display: block; margin-bottom: 0.9rem; }
+    .roots-gallery-item img { width: 100%; height: auto; border-radius: var(--radius); display: block; margin-bottom: 0.9rem; transition: transform 0.25s ease, box-shadow 0.25s ease; }
+    .roots-gallery-item img:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(61,43,31,0.15); }
     .roots-gallery-caption { font-family: -apple-system, sans-serif; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.4rem; }
     .roots-gallery-text { font-size: 0.9375rem; color: var(--text-mid); line-height: 1.65; }
     @media (max-width: 720px) { .roots-gallery { grid-template-columns: 1fr; } }
@@ -209,26 +237,29 @@
 <!-- Nav -->
 <nav>
   <div class="nav-name">Juan <span>Soltero</span> Boeckh</div>
+  <div class="lang-toggle-group" role="group" aria-label="Language / Idioma">
+    <button class="lang-opt" data-lang-btn="en" onclick="setLang('en')">EN</button>
+    <button class="lang-opt" data-lang-btn="es" onclick="setLang('es')">ES</button>
+  </div>
   <div class="nav-links">
     <a href="#story" data-lang-inline="en">About</a>
     <a href="#story" data-lang-inline="es">Acerca</a>
     <a href="#roots" data-lang-inline="en">Roots</a>
     <a href="#roots" data-lang-inline="es">Raíces</a>
-    <a href="https://solarassoc.com" target="_blank" rel="noopener noreferrer" data-lang-inline="en">Solara Consulting</a>
-    <a href="https://solarassoc.com" target="_blank" rel="noopener noreferrer" data-lang-inline="es">Solara Consulting</a>
-    <button class="lang-toggle" onclick="toggleLang()" id="lang-btn">ES</button>
+    <a href="https://solarassoc.com" target="_blank" rel="noopener noreferrer" class="nav-cta" data-lang-inline="en">Solara Consulting</a>
+    <a href="https://solarassoc.com" target="_blank" rel="noopener noreferrer" class="nav-cta" data-lang-inline="es">Solara Consulting</a>
   </div>
 </nav>
 
 <!-- Hero -->
 <section class="hero" style="padding: 0;">
   <div class="hero-image">
-    <img src="/juan.JPG" alt="Juan Leopoldo Boeckh Soltero — Consultant, Builder, Veteran">
+    <img src="/juan.JPG" alt="Juan Leopoldo Boeckh Soltero — Fractional Operations & Stability Architect">
   </div>
   <div class="hero-content">
     <div class="hero-eyebrow">
-      <span data-lang-inline="en">Consultant · Builder · Two Worlds</span>
-      <span data-lang-inline="es">Consultor · Constructor · Dos Mundos</span>
+      <span data-lang-inline="en">Fractional Operations & Stability Architect</span>
+      <span data-lang-inline="es">Arquitecto de Operaciones Fraccionadas y Estabilidad</span>
     </div>
 
     <h1 class="hero-title" data-lang="en">
@@ -239,10 +270,10 @@
     </h1>
 
     <p class="hero-sub" data-lang="en">
-      US Air Force veteran. Bilingual AI consultant and project manager. Builder of things — from a hacienda in the Sierra de Quila to operations for businesses across two countries.
+      US Air Force & Army National Guard veteran. Bilingual AI consultant and project manager. Builder of things — from a hacienda in the Sierra de Quila to operations for businesses across two countries.
     </p>
     <p class="hero-sub" data-lang="es">
-      Veterano de la Fuerza Aérea de EE.UU. Consultor de IA y gerente de proyectos bilingüe. Constructor — desde una hacienda en la Sierra de Quila hasta operaciones para negocios en dos países.
+      Veterano de la Fuerza Aérea y la Guardia Nacional del Ejército de EE.UU. Consultor de IA y gerente de proyectos bilingüe. Constructor — desde una hacienda en la Sierra de Quila hasta operaciones para negocios en dos países.
     </p>
 
     <div class="hero-locations sans">
@@ -276,11 +307,11 @@
         <p class="story-pull" data-lang="en">"Even from a ranch in the Sierras of Jalisco, on the back of a horse, I can always put on a suit, sit behind my Mac, and accomplish what's needed for anyone, anytime, anywhere."</p>
         <p class="story-pull" data-lang="es">"Desde un rancho en las Sierras de Jalisco, a caballo, siempre puedo ponerme un traje, sentarme frente a mi Mac y lograr lo que se necesite para cualquiera, en cualquier momento, en cualquier lugar."</p>
 
-        <div class="story-facts">
+        <div class="story-facts" data-lang="en">
           <div class="fact">
             <div class="fact-icon">✦</div>
             <div class="fact-text">
-              <strong>US Air Force Veteran</strong>
+              <strong>US Air Force & Army National Guard Veteran</strong>
               Served with discipline. Led with integrity.
             </div>
           </div>
@@ -308,8 +339,46 @@
           <div class="fact">
             <div class="fact-icon">✦</div>
             <div class="fact-text">
-              <strong>Principal Consultant, Solara</strong>
-              Project management · AI implementation · Emergency services.
+              <strong>Fractional Operations Architect, Solara</strong>
+              AI-driven systems · Structural stability · Scalable growth.
+            </div>
+          </div>
+        </div>
+
+        <div class="story-facts" data-lang="es">
+          <div class="fact">
+            <div class="fact-icon">✦</div>
+            <div class="fact-text">
+              <strong>Veterano de la Fuerza Aérea y la Guardia Nacional del Ejército de EE. UU.</strong>
+              Sirvió con disciplina. Lideró con integridad.
+            </div>
+          </div>
+          <div class="fact">
+            <div class="fact-icon">✦</div>
+            <div class="fact-text">
+              <strong>Más de 13 años en Construcción y Servicios de Emergencia</strong>
+              Desde los cimientos — literalmente.
+            </div>
+          </div>
+          <div class="fact">
+            <div class="fact-icon">✦</div>
+            <div class="fact-text">
+              <strong>Bilingüe — Inglés y Español</strong>
+              Dos idiomas. Dos culturas. Una perspectiva.
+            </div>
+          </div>
+          <div class="fact">
+            <div class="fact-icon">✦</div>
+            <div class="fact-text">
+              <strong>Radicado en Las Vegas · Con raíces en Jalisco</strong>
+              Estados Unidos y México. Ambos, por completo.
+            </div>
+          </div>
+          <div class="fact">
+            <div class="fact-icon">✦</div>
+            <div class="fact-text">
+              <strong>Arquitecto de Operaciones Fraccionado, Solara</strong>
+              Sistemas impulsados por IA · Estabilidad estructural · Crecimiento escalable.
             </div>
           </div>
         </div>
@@ -318,15 +387,15 @@
       <div>
         <div class="story-body" data-lang="en">
           <p>My full name is Juan Leopoldo Boeckh Soltero. I carry two family names, and both mean something. The Boeckhs are from Germany and Costa Rica — my father, Leopoldo Henry Boeckh, named me after himself and after his grandfather before him. The Solteros are from the Sierra de Quila, Jalisco, where my grandfather Don Maximiano Soltero was president of his community without knowing how to read or write — a man who traveled these mountains by horse and mule, fought in the Mexican Revolution as a child, and built a name that still carries weight in this region. In Costa Rica, I am a Boeckh. In Mexico, I am a Soltero. In the United States, I am both.</p>
-          <p>I started building things before I had a title for it. My first real project was the hacienda I built for my parents on that ranch. I served in the United States Air Force. I raised a family. I worked construction — small earthen repairs and historic restorations alike. Over time, I started managing projects and found I was good at it. Then AI changed everything, and I paid attention.</p>
-          <p>Now I combine what I know — construction, project management, emergency services, real estate, and modern AI tools — as Principal Consultant at Solara.</p>
+          <p>I started building things before I had a title for it. My first real project was the hacienda I built for my parents on that ranch. I served in the United States Air Force and the Army National Guard. I raised a family. I worked construction — small earthen repairs and historic restorations alike. Over time, I started managing projects and found I was good at it. Then AI changed everything, and I paid attention.</p>
+          <p>Now I combine what I know — construction, project management, emergency services, real estate, and modern AI tools — as Fractional Operations Architect at Solara.</p>
           <p>I work in English and Spanish. I travel freely between the US and Mexico. I understand both markets, both cultures, and both ways of doing business. That combination is rare.</p>
         </div>
 
         <div class="story-body" data-lang="es">
           <p>Mi nombre completo es Juan Leopoldo Boeckh Soltero. Cargo dos apellidos, y ambos significan algo. Los Boeckh son de Alemania y Costa Rica — mi padre, Leopoldo Henry Boeckh, me puso su nombre y el de su abuelo. Los Soltero son de la Sierra de Quila, Jalisco, donde mi abuelo Don Maximiano Soltero fue presidente de su comunidad sin saber leer ni escribir — un hombre que recorrió estas montañas a caballo y en mula, que peleó en la Revolución Mexicana siendo niño, y que construyó un nombre que aún pesa en esta región. En Costa Rica, soy un Boeckh. En México, soy un Soltero. En Estados Unidos, soy los dos.</p>
-          <p>Empecé a construir cosas antes de tener un título para ello. Mi primer proyecto real fue la hacienda que construí para mis padres en ese rancho. Serví en la Fuerza Aérea de los Estados Unidos. Formé una familia. Trabajé en la construcción — desde pequeñas reparaciones hasta restauraciones históricas. Con el tiempo empecé a gestionar proyectos y descubrí que se me daba bien. Luego llegó la inteligencia artificial y puse atención.</p>
-          <p>Ahora combino lo que sé — construcción, gestión de proyectos, servicios de emergencia, bienes raíces y herramientas modernas de IA — como Principal Consultant en Solara.</p>
+          <p>Empecé a construir cosas antes de tener un título para ello. Mi primer proyecto real fue la hacienda que construí para mis padres en ese rancho. Serví en la Fuerza Aérea y la Guardia Nacional del Ejército de los Estados Unidos. Formé una familia. Trabajé en la construcción — desde pequeñas reparaciones hasta restauraciones históricas. Con el tiempo empecé a gestionar proyectos y descubrí que se me daba bien. Luego llegó la inteligencia artificial y puse atención.</p>
+          <p>Ahora combino lo que sé — construcción, gestión de proyectos, servicios de emergencia, bienes raíces y herramientas modernas de IA — como Arquitecto de Operaciones Fraccionado en Solara.</p>
           <p>Trabajo en inglés y español. Viajo libremente entre Estados Unidos y México. Entiendo ambos mercados, ambas culturas y ambas formas de hacer negocios. Esa combinación es rara.</p>
         </div>
       </div>
@@ -362,6 +431,8 @@
           <div class="roots-aside-title">Arriero de Quila</div>
           <p class="roots-aside-body" data-lang="en">A future project rooted in the same soil: <em>Arriero de Quila</em>, a small-batch Raicilla produced on the family ranch. Raicilla is an ancestral spirit from Jalisco — older than tequila, rarely exported, and recently granted its own denomination of origin. If tequila and mezcal had a child in the Sierras of Jalisco, it would be Raicilla.</p>
           <p class="roots-aside-body" data-lang="es">Un proyecto futuro arraigado en la misma tierra: <em>Arriero de Quila</em>, una Raicilla artesanal producida en el rancho familiar. La Raicilla es un destilado ancestral de Jalisco — más antiguo que el tequila, rara vez exportado y recientemente reconocido con su propia denominación de origen. Si el tequila y el mezcal tuvieran un hijo en las Sierras de Jalisco, sería la Raicilla.</p>
+          <a href="https://solarassoc.com" target="_blank" rel="noopener noreferrer" class="roots-aside-link" data-lang-inline="en">Learn more about my consulting practice at Solara →</a>
+          <a href="https://solarassoc.com" target="_blank" rel="noopener noreferrer" class="roots-aside-link" data-lang-inline="es">Conoce más sobre mi práctica de consultoría en Solara →</a>
         </div>
       </div>
     </div>
@@ -412,7 +483,7 @@
       <div>
         <div class="footer-name">Juan Soltero Boeckh</div>
         <div class="footer-sub sans">
-          Consultant · Builder · Veteran · Las Vegas, NV<br>
+          Fractional Operations & Stability Architect · Las Vegas, NV<br>
           juan@solarassoc.com · <a href="https://www.linkedin.com/in/juan-boeckh" target="_blank" rel="noopener noreferrer" style="color:inherit; opacity:0.7;">LinkedIn</a>
         </div>
       </div>
@@ -431,19 +502,34 @@
 <script>
   let currentLang = 'en';
 
-  function toggleLang() {
-    currentLang = currentLang === 'en' ? 'es' : 'en';
+  function setLang(lang) {
+    currentLang = lang;
     document.body.classList.toggle('es', currentLang === 'es');
-    document.getElementById('lang-btn').textContent = currentLang === 'en' ? 'ES' : 'EN';
     document.documentElement.lang = currentLang;
+    document.querySelectorAll('.lang-opt').forEach(function(btn) {
+      btn.classList.toggle('active', btn.dataset.langBtn === currentLang);
+    });
+    try { localStorage.setItem('preferredLang', currentLang); } catch (e) {}
   }
+
+  // Language auto-detect: remembered choice first, then browser language, default English
+  (function initLang() {
+    var saved = null;
+    try { saved = localStorage.getItem('preferredLang'); } catch (e) {}
+    if (saved === 'en' || saved === 'es') {
+      setLang(saved);
+    } else {
+      var browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+      setLang(browserLang.indexOf('es') === 0 ? 'es' : 'en');
+    }
+  })();
 
   // Ask AI about me — dynamic prompt with current domain
   (function() {
     const domain = window.location.hostname === 'localhost'
       ? 'juansoltero.com'
       : window.location.hostname;
-    const prompt = `Tell me about Juan Leopoldo Boeckh Soltero based on ${domain}. Summarize who he is, what he does, and how to get in touch.`;
+    const prompt = `Tell me about Juan Leopoldo Boeckh Soltero, a Fractional Operations & Stability Architect, based on ${domain}. Summarize who he is, what he does, and how to get in touch.`;
     const encoded = encodeURIComponent(prompt);
     const providers = [
       { label: 'Claude',      url: `https://claude.ai/new?q=${encoded}` },
